@@ -4,6 +4,7 @@
  * then set it's value to null;
  *
  */
+ var unicorn = null;
 
 
 /* Step 2
