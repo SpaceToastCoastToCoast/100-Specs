@@ -497,6 +497,9 @@ function purchaseLaptop(laptopName) {
  *
  */
 
+function canTalkAbout(club) {
+  return !(club === club_name);
+}
 
 /* Step 30
  *
