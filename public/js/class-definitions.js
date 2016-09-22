@@ -990,6 +990,9 @@ function Vehicle(make, model) {
  *
  */
 
+function Shape(sides) {
+  this.sides = (sides >= 3) ? sides : null;
+}
 
 /**
  * Step 53
