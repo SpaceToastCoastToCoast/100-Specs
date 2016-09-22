@@ -451,6 +451,20 @@ function favoritePlanet(planet) {
  *
  */
 
+function Person(name, money, age, gender) {
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+}
+
+Person.prototype.spendMoney = function(cash) {
+  this.money -= cash;
+};
+
+Person.prototype.earnMoney = function(cash) {
+  this.money += cash;
+};
 
 /* Step 28
  *
