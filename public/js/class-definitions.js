@@ -590,7 +590,15 @@ Garden.prototype.grow = function() {
  *
  */
 
-
+function SolarSystem() {
+  this.planets = [];
+}
+SolarSystem.prototype.addPlanet = function(planet) {
+  this.planets.push(planet);
+};
+SolarSystem.prototype.removePlanet = function(planet) {
+  this.planets.splice(this.planets.indexOf(planet), 1);
+};
 /* Step 33
  *
  * Define a class named "PrincessLeia" that is a subclass of "Person"
