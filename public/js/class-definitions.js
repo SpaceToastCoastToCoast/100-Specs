@@ -420,6 +420,13 @@ function listLivingOrgClass() {
  *
  */
 
+function favoritePlanet(planet) {
+  if(planets.indexOf(planet) === -1) {
+    return planet + ' is not a planet!';
+  }
+  var randomPlanet = planets[Math.floor(Math.random() * planets.length)];
+  return 'I\'m from ' + planet + ', but I wish I could go to ' + randomPlanet + '.';
+}
 
 /* Step 27
  *
