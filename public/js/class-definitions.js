@@ -1060,6 +1060,9 @@ function Lightbulb(isOn) {
  * @param {string} flavor The cookie's flavor
  */
 
+function Cookie(flavor) {
+  this.flavor = flavor;
+}
 
 /**
  * Step 59
