@@ -375,6 +375,12 @@ function drink(beer) {
  *
  */
 
+function browseURL(browser) {
+  if(browsers.hasOwnProperty(browser)) {
+    return browsers[browser];
+  }
+  return false;
+}
 
 /* Step 25
  *
@@ -386,6 +392,13 @@ function drink(beer) {
  *
  */
 
+function listLivingOrgClass() {
+  result = '<ul>';
+  result += livingOrganismClassification.map(function(el) {
+    return '<li>' + el + '</li>';
+  }).join('');
+  return result + '</ul>';
+}
 
 /* Step 26
  *
