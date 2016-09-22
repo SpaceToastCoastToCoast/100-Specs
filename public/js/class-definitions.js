@@ -478,6 +478,12 @@ Person.prototype.earnMoney = function(cash) {
  *
  */
 
+function purchaseLaptop(laptopName) {
+  if(!laptopCosts.hasOwnProperty(laptopName)) {
+    return -1;
+  }
+  return laptopCosts[laptopName].toString();
+}
 
 /* Step 29
  *
