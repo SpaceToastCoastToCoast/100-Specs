@@ -498,7 +498,7 @@ function purchaseLaptop(laptopName) {
  */
 
 function canTalkAbout(club) {
-  return !(club === club_name);
+  return (club !== club_name);
 }
 
 /* Step 30
@@ -522,7 +522,13 @@ function canTalkAbout(club) {
  *
  */
 
+function Pen(color) {
+  this.color = color;
+}
 
+Pen.prototype.write = function(message) {
+  return this.color + ": " + message;
+};
 /* Step 31
  *
  * Define a class named "Garden" with a property for
