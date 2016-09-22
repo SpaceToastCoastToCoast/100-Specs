@@ -349,6 +349,19 @@ function installLinux(flavor) {
  *
  */
 
+function drink(beer) {
+  var description;
+  if(beers.hasOwnProperty(beer)) {
+    if(beers[beer] instanceof Array) {
+      description = beers[beer].join(" and ");
+    } else {
+      description = beers[beer];
+    }
+    return 'This ' + Object.keys(beers)[Object.keys(beers).indexOf(beer)] +
+    ' is ' + description + '.';
+  }
+  return false;
+}
 
 /* Step 24
  *
