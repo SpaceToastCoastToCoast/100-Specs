@@ -1249,6 +1249,9 @@ Shoe.prototype.findShoes = function() {
  *
  */
 
+House.prototype.isATallStory = function(storiesTooTall) {
+  return (this.stories >= storiesTooTall);
+};
 
  /* Step 88
  *
