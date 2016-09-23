@@ -1270,7 +1270,7 @@ Lightbulb.prototype.flipSwitch = function(on) {
     this.isOn = false;
   }
   return this.isOn;
-}
+};
 
  /* Step 89
  *
@@ -1280,6 +1280,12 @@ Lightbulb.prototype.flipSwitch = function(on) {
  *
  */
 
+Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek) {
+  if(dayOfTheWeek === "Monday" && this.flavor === "chocolate") {
+    return true;
+  }
+  return false;
+};
 
  /* Step 90
  *
