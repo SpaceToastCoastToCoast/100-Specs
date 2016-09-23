@@ -1334,8 +1334,8 @@ var notWarmOrColdAnimal = new Animal('Dinosaur', gender.male).isWarmBlooded();
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+var streetDriving = civic.drive('Woodlawn Street');
+var forwardDriving = forte.drive();
 
 
  /* Step 93
