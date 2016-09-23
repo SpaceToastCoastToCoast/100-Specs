@@ -1198,6 +1198,7 @@ Shape.prototype.getType = function() {
     default: return "Could not determine type";
   }
 };
+
 /* Step 84
  *
  * Declare a Box method called openBox that opens the box
@@ -1207,6 +1208,13 @@ Shape.prototype.getType = function() {
  *
  */
 
+Box.prototype.openBox = function() {
+  if(!this.isOpen) {
+    this.isOpen = true;
+    return true;
+  }
+  return false;
+};
 
  /* Step 85
  *
