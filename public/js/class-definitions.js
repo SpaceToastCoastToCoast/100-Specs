@@ -1224,6 +1224,10 @@ Box.prototype.openBox = function() {
  *
  */
 
+Door.prototype.openClose = function() {
+  this.isOpen = !this.isOpen;
+  return this.isOpen;
+};
 
 /* Step 86
  *
