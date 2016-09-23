@@ -1301,7 +1301,15 @@ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek) {
  *
  */
 
-
+Meal.prototype.containsJunkFood = function() {
+  var junkFood = ['chips', 'soda', 'ice cream', 'popcorn', 'candy'];
+  for(var j in junkFood) {
+    if(this.foods.indexOf(junkFood[j]) > -1) {
+      return true;
+    }
+  }
+  return false;
+};
  /* Steps 91 to 100
  *
  * Call methods
