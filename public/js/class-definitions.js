@@ -1185,7 +1185,19 @@ Vehicle.prototype.drive = function(streetName) {
  *
  */
 
-
+Shape.prototype.getType = function() {
+  switch(this.sides) {
+    case 3: return "triangle";
+    case 4: return "quadrilateral";
+    case 5: return "pentagon";
+    case 6: return "hexagon";
+    case 7: return "heptagon";
+    case 8: return "octagon";
+    case 9: return "nonagon";
+    case 10: return "decagon";
+    default: return "Could not determine type";
+  }
+};
 /* Step 84
  *
  * Declare a Box method called openBox that opens the box
