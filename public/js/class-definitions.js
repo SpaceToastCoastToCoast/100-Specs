@@ -1354,7 +1354,7 @@ var polygon = new Shape(12).getType();
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox = christmasPresent.openBox();
+var openAClosedBox = new Box('cereal', false).openBox();
 var closeAnOpenBox = catBox.openBox();
 
 
@@ -1364,8 +1364,8 @@ var closeAnOpenBox = catBox.openBox();
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor = bankVault.openClose();
-var closeAnOpenDoor = automaticDoor.openClose();
+var openAClosedDoor = new Door(false).openClose();
+var closeAnOpenDoor = new Door(true).openClose();
 
 
 /* Step 96
@@ -1414,5 +1414,5 @@ var cookieMonsterBlocked = gingerbread.swipedByCookieMonster("Tuesday");
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+var badForYou = new Meal(['popcorn', 'chips']).containsJunkFood();
+var goodForYou = new Meal(['carrots', 'chicken']).containsJunkFood();
