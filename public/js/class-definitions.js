@@ -1263,6 +1263,14 @@ House.prototype.isATallStory = function(storiesTooTall) {
  *
  */
 
+Lightbulb.prototype.flipSwitch = function(on) {
+  if(on === "on") {
+    this.isOn = true;
+  } else {
+    this.isOn = false;
+  }
+  return this.isOn;
+}
 
  /* Step 89
  *
